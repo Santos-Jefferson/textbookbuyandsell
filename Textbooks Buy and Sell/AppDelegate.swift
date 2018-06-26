@@ -7,19 +7,63 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuthUI
+import FBSDKCoreKit
+import FirebaseCore
 import CoreData
-
+import FirebaseDatabase
+import FirebaseGoogleAuthUI
+import FirebaseFacebookAuthUI
+import FirebaseFirestore
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-    var window: UIWindow?
-
-
+    
+   var window: UIWindow?
+    
+    // Using Facebook SDK, specific LOGIN features
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //time during launcher
+        Thread.sleep(forTimeInterval: 1.0)
+        
+        //Using Firebase
+        FirebaseApp.configure()
+        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+        
+//        window = UIWindow()
+//        window?.makeKeyAndVisible()
+//
+//        let vc = ViewController()
+//        window?.rootViewController = vc
+//
         return true
     }
-
+    
+    
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) ->
+        Bool {
+            return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+    }
+    
+    
+//    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {
+//         let credential = FacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+//        Auth.auth().signInAndRetrieveData(with: credential) { (authResult, error) in
+//        if let error = error {
+//            print(error.localizedDescription)
+//            return
+//        }
+//        }
+//        //print("Completed")
+//    }
+    
+    
+    
+    /****************************************************/
+    /****************************************************/
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
@@ -58,7 +102,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
                 // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                 
+
                 /*
                  Typical reasons for an error here include:
                  * The parent directory does not exist, cannot be created, or disallows writing.

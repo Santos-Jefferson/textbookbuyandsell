@@ -7,15 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86532C13295186F1DD57FC93 /* Pods_Textbooks_Buy_and_Sell.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C87507C39164B904BC3634 /* Pods_Textbooks_Buy_and_Sell.framework */; };
+		E90B97E020B287BA005AB656 /* AppDelegate_oirg.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90B97DF20B287BA005AB656 /* AppDelegate_oirg.swift */; };
 		E90EE37920A5193F00F45091 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90EE37820A5193F00F45091 /* AppDelegate.swift */; };
 		E90EE37B20A5193F00F45091 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90EE37A20A5193F00F45091 /* ViewController.swift */; };
 		E90EE37E20A5193F00F45091 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90EE37C20A5193F00F45091 /* Main.storyboard */; };
 		E90EE38120A5193F00F45091 /* Textbooks_Buy_and_Sell.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E90EE37F20A5193F00F45091 /* Textbooks_Buy_and_Sell.xcdatamodeld */; };
 		E90EE38320A5194100F45091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E90EE38220A5194100F45091 /* Assets.xcassets */; };
 		E90EE38620A5194100F45091 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90EE38420A5194100F45091 /* LaunchScreen.storyboard */; };
+		E915D89420A57304008EBDB1 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E915D89020A57302008EBDB1 /* FBSDKShareKit.framework */; };
+		E915D89520A57304008EBDB1 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E915D89120A57303008EBDB1 /* FBSDKCoreKit.framework */; };
+		E915D89620A57304008EBDB1 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E915D89220A57303008EBDB1 /* FBSDKLoginKit.framework */; };
+		E92EACEA20B297F9003813E0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92EACE920B297F9003813E0 /* Service.swift */; };
+		E9409BA420BD198F0012085F /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9409BA320BD198F0012085F /* OptionsViewController.swift */; };
+		E9409BA620BD265E0012085F /* UserAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9409BA520BD265E0012085F /* UserAccountViewController.swift */; };
+		E990568E20ABF6B600893E2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E990568D20ABF6B600893E2B /* GoogleService-Info.plist */; };
+		E993697420AA0B8500CB35FB /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = E993697320AA0B8500CB35FB /* Test.m */; };
+		E99F8D6920B54F03002C320F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99F8D6820B54F03002C320F /* HomeViewController.swift */; };
+		E99F8D6B20B93654002C320F /* ListToBuyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99F8D6A20B93654002C320F /* ListToBuyViewController.swift */; };
+		E9CB421D20DA184600CA5BBB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB421C20DA184600CA5BBB /* DetailsViewController.swift */; };
+		E9CB421F20DB79B600CA5BBB /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CB421E20DB79B600CA5BBB /* SearchTableViewCell.swift */; };
+		E9E2AF9420B4C79200EF9ECF /* SellFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9E2AF9320B4C79200EF9ECF /* SellFormViewController.swift */; };
+		E9F2FEEF20B401E5007B0241 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F2FEEE20B401E5007B0241 /* SignUpViewController.swift */; };
+		E9F2FEF120B402F0007B0241 /* BuyOrSellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F2FEF020B402F0007B0241 /* BuyOrSellViewController.swift */; };
+		E9F2FEF320B40453007B0241 /* SellPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F2FEF220B40453007B0241 /* SellPhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E83A3E5EE9EF99795B62A1E /* Pods-Textbooks Buy and Sell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Textbooks Buy and Sell.release.xcconfig"; path = "Pods/Target Support Files/Pods-Textbooks Buy and Sell/Pods-Textbooks Buy and Sell.release.xcconfig"; sourceTree = "<group>"; };
+		89D7F0678FEB268747AFCDF1 /* Pods-Textbooks Buy and Sell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Textbooks Buy and Sell.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Textbooks Buy and Sell/Pods-Textbooks Buy and Sell.debug.xcconfig"; sourceTree = "<group>"; };
+		E2C87507C39164B904BC3634 /* Pods_Textbooks_Buy_and_Sell.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Textbooks_Buy_and_Sell.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E90B97DF20B287BA005AB656 /* AppDelegate_oirg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate_oirg.swift; sourceTree = "<group>"; };
 		E90EE37520A5193F00F45091 /* Textbooks Buy and Sell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Textbooks Buy and Sell.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90EE37820A5193F00F45091 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E90EE37A20A5193F00F45091 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +46,25 @@
 		E90EE38220A5194100F45091 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E90EE38520A5194100F45091 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E90EE38720A5194100F45091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E915D89020A57302008EBDB1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		E915D89120A57303008EBDB1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		E915D89220A57303008EBDB1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		E915D89320A57304008EBDB1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		E92EACE920B297F9003813E0 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		E9409BA320BD198F0012085F /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		E9409BA520BD265E0012085F /* UserAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountViewController.swift; sourceTree = "<group>"; };
+		E990568D20ABF6B600893E2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E993697020AA0A1000CB35FB /* Textbooks Buy and Sell-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Textbooks Buy and Sell-Bridging-Header.h"; sourceTree = "<group>"; };
+		E993697320AA0B8500CB35FB /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		E99F8D6820B54F03002C320F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E99F8D6A20B93654002C320F /* ListToBuyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListToBuyViewController.swift; sourceTree = "<group>"; };
+		E9CB421C20DA184600CA5BBB /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E9CB421E20DB79B600CA5BBB /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		E9D1C0BE20AD578D00E0F293 /* Textbooks Buy and Sell.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Textbooks Buy and Sell.entitlements"; sourceTree = "<group>"; };
+		E9E2AF9320B4C79200EF9ECF /* SellFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellFormViewController.swift; sourceTree = "<group>"; };
+		E9F2FEEE20B401E5007B0241 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		E9F2FEF020B402F0007B0241 /* BuyOrSellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyOrSellViewController.swift; sourceTree = "<group>"; };
+		E9F2FEF220B40453007B0241 /* SellPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellPhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +72,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E915D89520A57304008EBDB1 /* FBSDKCoreKit.framework in Frameworks */,
+				E915D89620A57304008EBDB1 /* FBSDKLoginKit.framework in Frameworks */,
+				E915D89420A57304008EBDB1 /* FBSDKShareKit.framework in Frameworks */,
+				86532C13295186F1DD57FC93 /* Pods_Textbooks_Buy_and_Sell.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88B52B5293BA45C467367966 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2C87507C39164B904BC3634 /* Pods_Textbooks_Buy_and_Sell.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		893B3EFA0285ABDD2E39923F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89D7F0678FEB268747AFCDF1 /* Pods-Textbooks Buy and Sell.debug.xcconfig */,
+				0E83A3E5EE9EF99795B62A1E /* Pods-Textbooks Buy and Sell.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E90EE36C20A5193F00F45091 = {
 			isa = PBXGroup;
 			children = (
 				E90EE37720A5193F00F45091 /* Textbooks Buy and Sell */,
 				E90EE37620A5193F00F45091 /* Products */,
+				E993697020AA0A1000CB35FB /* Textbooks Buy and Sell-Bridging-Header.h */,
+				893B3EFA0285ABDD2E39923F /* Pods */,
+				88B52B5293BA45C467367966 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +121,32 @@
 		E90EE37720A5193F00F45091 /* Textbooks Buy and Sell */ = {
 			isa = PBXGroup;
 			children = (
+				E9D1C0BE20AD578D00E0F293 /* Textbooks Buy and Sell.entitlements */,
+				E990568D20ABF6B600893E2B /* GoogleService-Info.plist */,
 				E90EE37820A5193F00F45091 /* AppDelegate.swift */,
+				E90B97DF20B287BA005AB656 /* AppDelegate_oirg.swift */,
 				E90EE37A20A5193F00F45091 /* ViewController.swift */,
+				E9CB421C20DA184600CA5BBB /* DetailsViewController.swift */,
+				E99F8D6820B54F03002C320F /* HomeViewController.swift */,
+				E9F2FEEE20B401E5007B0241 /* SignUpViewController.swift */,
+				E9F2FEF020B402F0007B0241 /* BuyOrSellViewController.swift */,
+				E99F8D6A20B93654002C320F /* ListToBuyViewController.swift */,
+				E9409BA320BD198F0012085F /* OptionsViewController.swift */,
+				E9F2FEF220B40453007B0241 /* SellPhotoViewController.swift */,
+				E9CB421E20DB79B600CA5BBB /* SearchTableViewCell.swift */,
+				E9E2AF9320B4C79200EF9ECF /* SellFormViewController.swift */,
+				E9409BA520BD265E0012085F /* UserAccountViewController.swift */,
 				E90EE37C20A5193F00F45091 /* Main.storyboard */,
 				E90EE38220A5194100F45091 /* Assets.xcassets */,
 				E90EE38420A5194100F45091 /* LaunchScreen.storyboard */,
 				E90EE38720A5194100F45091 /* Info.plist */,
 				E90EE37F20A5193F00F45091 /* Textbooks_Buy_and_Sell.xcdatamodeld */,
+				E915D89320A57304008EBDB1 /* Bolts.framework */,
+				E915D89120A57303008EBDB1 /* FBSDKCoreKit.framework */,
+				E915D89220A57303008EBDB1 /* FBSDKLoginKit.framework */,
+				E915D89020A57302008EBDB1 /* FBSDKShareKit.framework */,
+				E993697320AA0B8500CB35FB /* Test.m */,
+				E92EACE920B297F9003813E0 /* Service.swift */,
 			);
 			path = "Textbooks Buy and Sell";
 			sourceTree = "<group>";
@@ -74,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E90EE38A20A5194100F45091 /* Build configuration list for PBXNativeTarget "Textbooks Buy and Sell" */;
 			buildPhases = (
+				50F8A1C09F2DB796AE931342 /* [CP] Check Pods Manifest.lock */,
 				E90EE37120A5193F00F45091 /* Sources */,
 				E90EE37220A5193F00F45091 /* Frameworks */,
 				E90EE37320A5193F00F45091 /* Resources */,
+				B62BF3F226D903ABBF2A5EA9 /* [CP] Embed Pods Frameworks */,
+				760B5554722EDA1B73A49333 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -99,6 +186,12 @@
 				TargetAttributes = {
 					E90EE37420A5193F00F45091 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -126,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E90EE38620A5194100F45091 /* LaunchScreen.storyboard in Resources */,
+				E990568E20ABF6B600893E2B /* GoogleService-Info.plist in Resources */,
 				E90EE38320A5194100F45091 /* Assets.xcassets in Resources */,
 				E90EE37E20A5193F00F45091 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +227,128 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		50F8A1C09F2DB796AE931342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Textbooks Buy and Sell-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		760B5554722EDA1B73A49333 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Textbooks Buy and Sell/Pods-Textbooks Buy and Sell-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseFacebookAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseGoogleAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebasePhoneAuthUI.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseTwitterAuthUI.bundle",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseFacebookAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseGoogleAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebasePhoneAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseTwitterAuthUI.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Textbooks Buy and Sell/Pods-Textbooks Buy and Sell-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B62BF3F226D903ABBF2A5EA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Textbooks Buy and Sell/Pods-Textbooks Buy and Sell-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Textbooks Buy and Sell/Pods-Textbooks Buy and Sell-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E90EE37120A5193F00F45091 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F2FEF120B402F0007B0241 /* BuyOrSellViewController.swift in Sources */,
+				E90B97E020B287BA005AB656 /* AppDelegate_oirg.swift in Sources */,
+				E99F8D6B20B93654002C320F /* ListToBuyViewController.swift in Sources */,
+				E9F2FEEF20B401E5007B0241 /* SignUpViewController.swift in Sources */,
 				E90EE37B20A5193F00F45091 /* ViewController.swift in Sources */,
+				E993697420AA0B8500CB35FB /* Test.m in Sources */,
 				E90EE37920A5193F00F45091 /* AppDelegate.swift in Sources */,
+				E9F2FEF320B40453007B0241 /* SellPhotoViewController.swift in Sources */,
+				E9409BA420BD198F0012085F /* OptionsViewController.swift in Sources */,
+				E99F8D6920B54F03002C320F /* HomeViewController.swift in Sources */,
 				E90EE38120A5193F00F45091 /* Textbooks_Buy_and_Sell.xcdatamodeld in Sources */,
+				E9E2AF9420B4C79200EF9ECF /* SellFormViewController.swift in Sources */,
+				E92EACEA20B297F9003813E0 /* Service.swift in Sources */,
+				E9CB421F20DB79B600CA5BBB /* SearchTableViewCell.swift in Sources */,
+				E9409BA620BD265E0012085F /* UserAccountViewController.swift in Sources */,
+				E9CB421D20DA184600CA5BBB /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,10 +490,29 @@
 		};
 		E90EE38B20A5194100F45091 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89D7F0678FEB268747AFCDF1 /* Pods-Textbooks Buy and Sell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Textbooks Buy and Sell/Textbooks Buy and Sell.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M4X57KQNXA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"\"$(SRCROOT)/FacebookSDKs-iOS-4.33.0\"",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+				);
 				INFOPLIST_FILE = "Textbooks Buy and Sell/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,6 +520,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JeffersonSantos.Textbooks-Buy-and-Sell";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Textbooks Buy and Sell-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,10 +529,29 @@
 		};
 		E90EE38C20A5194100F45091 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E83A3E5EE9EF99795B62A1E /* Pods-Textbooks Buy and Sell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Textbooks Buy and Sell/Textbooks Buy and Sell.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M4X57KQNXA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"\"$(SRCROOT)/FacebookSDKs-iOS-4.33.0\"",
+					"$(PROJECT_DIR)/Pods/FirebaseAnalytics/Frameworks",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+					"$(PROJECT_DIR)/Textbooks\\ Buy\\ and\\ Sell",
+				);
 				INFOPLIST_FILE = "Textbooks Buy and Sell/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +559,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JeffersonSantos.Textbooks-Buy-and-Sell";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Textbooks Buy and Sell-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
