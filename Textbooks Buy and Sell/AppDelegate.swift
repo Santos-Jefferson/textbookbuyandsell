@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
    var window: UIWindow?
     
-    // Using Facebook SDK, specific LOGIN features
+    // Using Facebook SDK, specific LOGIN features.....
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //time during launcher
