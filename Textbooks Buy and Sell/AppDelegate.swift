@@ -8,13 +8,12 @@
 
 import UIKit
 import Firebase
-import FirebaseAuthUI
-import FBSDKCoreKit
+//import FirebaseAuthUI
 import FirebaseCore
 import CoreData
 import FirebaseDatabase
-import FirebaseGoogleAuthUI
-import FirebaseFacebookAuthUI
+//import FirebaseGoogleAuthUI
+//import FirebaseFacebookAuthUI
 import FirebaseFirestore
 @UIApplicationMain
 
@@ -30,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         //Using Firebase
         FirebaseApp.configure()
-        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+//        FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
 //        window = UIWindow()
 //        window?.makeKeyAndVisible()
@@ -42,10 +41,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     
-    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) ->
-        Bool {
-            return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
-    }
+//    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) ->
+//        Bool {
+//            return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+//    }
     
     
 //    func loginButton(_ loginButton: FBSDKLoginButton!, didCompleteWith result: FBSDKLoginManagerLoginResult!, error: Error!) {

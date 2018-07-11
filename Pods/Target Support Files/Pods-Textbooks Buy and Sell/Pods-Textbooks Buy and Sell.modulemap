@@ -1,0 +1,6 @@
+framework module Pods_Textbooks_Buy_and_Sell {
+  umbrella header "Pods-Textbooks Buy and Sell-umbrella.h"
+
+  export *
+  module * { export * }
+}

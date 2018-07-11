@@ -7,7 +7,9 @@
 //
 
 import UIKit
-import FirebaseAuthUI
+import Firebase
+import FirebaseAuth
+//import FirebaseAuthUI
 
 class SignUpViewController: UIViewController, UITextFieldDelegate{
     
@@ -15,6 +17,8 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
+    
+    @IBOutlet weak var progress: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,36 +40,29 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
         let password = self.password.text
         let confirm = confirmPassword.text
         if password == confirm {
+            self.progress.startAnimating()
             Auth.auth().createUser(withEmail: email!, password: password!) { (authResult, error) in
             if let error = error{
+                self.progress.stopAnimating()
                 self.showAlert(error)
                 return
             }else{
                 self.showConfirm()
-                self.gonextview()
                 }
             }
             
         } else {
+            progress.stopAnimating()
             self.showPasswordError()
         }
-        
-}
+    }
       
-    
-    
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    fileprivate func gonextview() {
-        self.performSegue(withIdentifier: "segueSignup", sender: self)
-    }
-    
-    
-    
+
     //Show alert error
     fileprivate func showAlert(_ error: Error) {
         //Alert if some error happens
@@ -81,11 +78,11 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
         //Alert if signup was confirmed
         let alert = UIAlertController(title: "Signup Confirmation!", message: "Congrats, your account has been created!", preferredStyle: .alert)
         //user action OK
-        alert.addAction(UIAlertAction(title: "Use the App", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Use the App", style: .default, handler: {(action) in
+            self.performSegue(withIdentifier: "navbarsignup", sender: self)
+        }))
         //Present the alert
         self.present(alert, animated: true)
-        return
-        
     }
     
     //Show signup confirmation

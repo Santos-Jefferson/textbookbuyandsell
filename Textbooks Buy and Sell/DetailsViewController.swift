@@ -13,31 +13,38 @@ class DetailsViewController: UIViewController {
     @IBOutlet weak var textbookImg: UIImageView!
     @IBOutlet weak var textbookDetails: UILabel!
     
-    
-    
+    var image = UIImage()
+    var textTitle = " "
+    var textAuthor = " "
+//    var textISBN = " "
+    var textCondition = " "
+    var textPrice = " "
+//    var textEdition = " "
+//    var textPublisher = " "
+//    var textYear = " "
+    var textEmail = " "
+
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        textbookDetails.text = "Title: \(textTitle) \nAuthor: \(textAuthor) \nCondition: \(textCondition) \nPrice: U$ \(textPrice) \nEmail: \(textEmail)"
         
-        textbookDetails.text = "/(Title: Test123), /(Author: Jeffe Santos)"
-        
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        textbookImg.image = image
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func sendEmail(_ sender: Any) {
+        let subject = "About \"\(textTitle)\" Textbook"
+        let body = "Hi, is \(textTitle) textbook still Avaiable? \n\nThanks!"
+        let coded = "mailto:\(textEmail)?subject=\(subject)&body=\(body)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        
+        if let emailURL: NSURL = NSURL(string: coded!) {
+            if UIApplication.shared.canOpenURL(emailURL as URL) {
+                UIApplication.shared.openURL(emailURL as URL)
+            }
+        }
     }
-    */
-
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }

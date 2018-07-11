@@ -11,29 +11,32 @@ import AVFoundation
 
 class BuyOrSellViewController: UIViewController {
     
+     @IBOutlet weak var camButton: UIButton!
+    
     var captureSession = AVCaptureSession()
     var backCamera: AVCaptureDevice?
     var frontCamera: AVCaptureDevice?
     var currentCamera: AVCaptureDevice?
-    
     var photoOutput: AVCapturePhotoOutput?
-    
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
     
+    //variable to receive the image
     var image: UIImage?
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.camButton.layer.cornerRadius = 10
+        self.camButton.clipsToBounds = true
+        
+        //Calling the functions
         setupCaptureSession()
         setupDevice()
         setupInputOutput()
         setupPreviewLayer()
         startRunningCaptureSession()
-
-        // Do any additional setup after loading the view.
     }
+    
     
     func setupCaptureSession(){
         captureSession.sessionPreset = AVCaptureSession.Preset.photo
@@ -41,6 +44,7 @@ class BuyOrSellViewController: UIViewController {
     
     func setupDevice(){
         let deviceDiscoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [AVCaptureDevice.DeviceType.builtInWideAngleCamera], mediaType: AVMediaType.video, position: AVCaptureDevice.Position.unspecified)
+    
         let devices = deviceDiscoverySession.devices
         
         for device in devices {
@@ -81,7 +85,6 @@ class BuyOrSellViewController: UIViewController {
     @IBAction func CameraButton(_ sender: Any) {
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)
-        //performSegue(withIdentifier: "showPhotoSegue", sender: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -93,7 +96,6 @@ class BuyOrSellViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 

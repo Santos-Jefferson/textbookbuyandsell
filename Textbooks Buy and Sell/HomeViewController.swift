@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 
-
 class HomeViewController: UIViewController, UITextFieldDelegate {
     
     //Handle the user signed in
@@ -25,6 +24,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     //ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "segue", sender: self)
         }
@@ -38,26 +38,26 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
     
-    
-   
+    //status progress animated
+    @IBOutlet weak var progress: UIActivityIndicatorView!
     
     //Login Button
     @IBAction func FirebaseLogin(_ sender: UIButton) {
+        self.progress.startAnimating()
         let auth = Auth.auth()
         let email = self.emailInputHome.text
         let password = self.passwordInputHome.text
         auth.signIn(withEmail: email!, password: password!) { (user, error) in
-                if let error = error {
-                    self.showAlert(error)
-                    //Console print
-                    print(error)
-                return
-                }
+            if let error = error {
+                self.showAlert(error)
+                //Console print
+                print(error)
+                self.progress.stopAnimating()
+            return
+            }
              self.performSegue(withIdentifier: "segue", sender: self)
             }
         }
-    
-
     
     //Function to put the keyboard down when pressed RETURN
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
@@ -83,9 +83,9 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     
     func setTitleDisplay(_ user: User?) {
         if let name = user?.displayName {
-            self.navigationItem.title = "Welcome \(name)"
+            self.navigationItem.title = "Welcome \(user?.email)"
         } else {
-            self.navigationItem.title = "Authentication Example"
+            self.navigationItem.title = "Login"
         }
     }
     
@@ -95,6 +95,8 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         handle = Auth.auth().addStateDidChangeListener { (auth, user) in
             self.setTitleDisplay(user)
         }
+        self.navigationController?.navigationItem.setHidesBackButton(true, animated: true)
+        
     }
     
     //To remove the handle user in others views

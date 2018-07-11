@@ -11,16 +11,27 @@ import Firebase
 
 class OptionsViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let user = Auth.auth().currentUser
-        //print(user?.email)
-
-        // Do any additional setup after loading the view.
+        
+        if Auth.auth().currentUser == nil {
+            self.performSegue(withIdentifier: "logout", sender: self)
+        }
+        
+        print(Auth.auth().currentUser?.email)
     }
-
+    @IBAction func logout(_ sender: Any) {
+        try! Auth.auth().signOut()
+        //self.performSegue(withIdentifier: "logout", sender: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.navigationItem.setHidesBackButton(true, animated: true)
     }
 }
