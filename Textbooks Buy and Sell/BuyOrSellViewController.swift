@@ -26,7 +26,7 @@ class BuyOrSellViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.camButton.layer.cornerRadius = 10
+        self.camButton.layer.cornerRadius = 20
         self.camButton.clipsToBounds = true
         
         //Calling the functions
@@ -81,7 +81,6 @@ class BuyOrSellViewController: UIViewController {
         captureSession.startRunning()
     }
     
-
     @IBAction func CameraButton(_ sender: Any) {
         let settings = AVCapturePhotoSettings()
         photoOutput?.capturePhoto(with: settings, delegate: self)

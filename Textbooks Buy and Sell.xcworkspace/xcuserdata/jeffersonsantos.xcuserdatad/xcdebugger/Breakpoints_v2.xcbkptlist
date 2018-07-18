@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Textbooks Buy and Sell/SellPhotoViewController.swift"
-            timestampString = "552986748.250098"
+            timestampString = "553622409.965286"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "SavePhoto(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Textbooks Buy and Sell/SellPhotoViewController.swift"
-            timestampString = "552986748.250204"
+            timestampString = "553622409.965827"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "SavePhoto(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Textbooks Buy and Sell/SignUpViewController.swift"
-            timestampString = "552986748.2503231"
+            timestampString = "553622409.966169"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "FirebaseSignup(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -57,60 +57,12 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Textbooks Buy and Sell/ListToBuyViewController.swift"
-            timestampString = "552986748.250439"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Textbooks_Buy_and_Sell.ListToBuyViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Textbooks Buy and Sell"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonsantos/Desktop/Textbooks%20Buy%20and%20Sell/Textbooks%20Buy%20and%20Sell/ListToBuyViewController.swift"
-                  timestampString = "551853965.464491"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "30"
-                  endingLineNumber = "30"
-                  offsetFromSymbolStart = "939">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in Textbooks_Buy_and_Sell.ListToBuyViewController.viewDidLoad() -&gt; ()"
-                  moduleName = "Textbooks Buy and Sell"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonsantos/Desktop/Textbooks%20Buy%20and%20Sell/Textbooks%20Buy%20and%20Sell/ListToBuyViewController.swift"
-                  timestampString = "551853965.467067"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "31"
-                  endingLineNumber = "31"
-                  offsetFromSymbolStart = "22">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "Textbooks Buy and Sell/SellPhotoViewController.swift"
-            timestampString = "552986748.250574"
+            timestampString = "553622409.96626"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "SavePhoto(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -122,106 +74,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Textbooks Buy and Sell/ListToBuyViewController.swift"
-            timestampString = "552986748.250693"
+            timestampString = "553622409.9665689"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "ListToBuyViewController"
-            landmarkType = "3">
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Textbooks_Buy_and_Sell.ListToBuyViewController.__deallocating_deinit"
+                  symbolName = "Textbooks_Buy_and_Sell.ListToBuyViewController.viewDidLoad() -&gt; ()"
                   moduleName = "Textbooks Buy and Sell"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jeffersonsantos/Desktop/Textbooks%20Buy%20and%20Sell/Textbooks%20Buy%20and%20Sell/ListToBuyViewController.swift"
-                  timestampString = "552298586.897159"
+                  timestampString = "553212883.805636"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "1613">
                </Location>
                <Location
                   shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "Textbooks_Buy_and_Sell.ListToBuyViewController.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Textbooks_Buy_and_Sell.ListToBuyViewController"
+                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in Textbooks_Buy_and_Sell.ListToBuyViewController.viewDidLoad() -&gt; ()"
                   moduleName = "Textbooks Buy and Sell"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/jeffersonsantos/Desktop/Textbooks%20Buy%20and%20Sell/Textbooks%20Buy%20and%20Sell/ListToBuyViewController.swift"
-                  timestampString = "552298586.8998621"
+                  timestampString = "553212883.808678"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Textbooks_Buy_and_Sell.ListToBuyViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; Textbooks_Buy_and_Sell.ListToBuyViewController"
-                  moduleName = "Textbooks Buy and Sell"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonsantos/Desktop/Textbooks%20Buy%20and%20Sell/Textbooks%20Buy%20and%20Sell/ListToBuyViewController.swift"
-                  timestampString = "552298586.902501"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Textbooks_Buy_and_Sell.ListToBuyViewController.__allocating_init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Textbooks_Buy_and_Sell.ListToBuyViewController&gt;"
-                  moduleName = "Textbooks Buy and Sell"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonsantos/Desktop/Textbooks%20Buy%20and%20Sell/Textbooks%20Buy%20and%20Sell/ListToBuyViewController.swift"
-                  timestampString = "552298586.904934"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  shouldBeEnabled = "No"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Textbooks_Buy_and_Sell.ListToBuyViewController.init(coder: __ObjC.NSCoder) -&gt; Swift.Optional&lt;Textbooks_Buy_and_Sell.ListToBuyViewController&gt;"
-                  moduleName = "Textbooks Buy and Sell"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jeffersonsantos/Desktop/Textbooks%20Buy%20and%20Sell/Textbooks%20Buy%20and%20Sell/ListToBuyViewController.swift"
-                  timestampString = "552298586.907751"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "15"
-                  endingLineNumber = "15"
-                  offsetFromSymbolStart = "56">
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "17">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Textbooks Buy and Sell/ListToBuyViewController.swift"
-            timestampString = "552986748.250838"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
-            landmarkName = "searchBar(_:textDidChange:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

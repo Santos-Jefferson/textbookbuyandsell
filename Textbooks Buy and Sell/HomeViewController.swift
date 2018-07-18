@@ -17,6 +17,8 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     //Text Fields for login
     @IBOutlet weak var emailInputHome: UITextField!
     @IBOutlet weak var passwordInputHome: UITextField!
+    @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var createAccount: UIButton!
     
     //Labels for login
     @IBOutlet weak var loggedAsTextField: UILabel!
@@ -24,6 +26,11 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     //ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.loginButton.layer.cornerRadius = 10
+        self.createAccount.layer.cornerRadius = 10
+        self.loginButton.clipsToBounds = true
+        self.createAccount.clipsToBounds = true
         
         if Auth.auth().currentUser != nil {
             self.performSegue(withIdentifier: "segue", sender: self)
@@ -85,7 +92,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         if let name = user?.displayName {
             self.navigationItem.title = "Welcome \(user?.email)"
         } else {
-            self.navigationItem.title = "Login"
+            self.navigationItem.title = "Welcome"
         }
     }
     

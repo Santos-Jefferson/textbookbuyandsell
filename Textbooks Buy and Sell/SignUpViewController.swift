@@ -17,14 +17,23 @@ class SignUpViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var confirmPassword: UITextField!
-    
+    @IBOutlet weak var createButton: UIButton!
     @IBOutlet weak var progress: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.createButton.layer.cornerRadius = 10
+        self.createButton.clipsToBounds = true
+        
         email.delegate = self
         password.delegate = self
         confirmPassword.delegate = self
+    }
+    
+    //Close keyboard when tap and other area
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

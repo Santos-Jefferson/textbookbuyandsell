@@ -5,7 +5,6 @@
 //  Created by Jefferson Santos on 5/26/18.
 //  Copyright © 2018 Jefferson Santos. All rights reserved.
 //
-
 import UIKit
 import Firebase
 import FirebaseDatabase
@@ -46,12 +45,13 @@ class ListToBuyViewController: UIViewController, UITableViewDelegate, UITableVie
                 for (k,v) in dic{
                     self.postData.append(v as! NSDictionary)
                     self.currentPostData = self.postData
+                    
                     self.tableView.reloadData()
+                    
                 }
             }
         })
     }
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return currentPostData.count
@@ -60,7 +60,7 @@ class ListToBuyViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
     }
-
+    
     var post:NSDictionary?
     var url:NSURL?
     var data:NSData?
@@ -68,26 +68,29 @@ class ListToBuyViewController: UIViewController, UITableViewDelegate, UITableVie
     fileprivate func getDataToShow(_ indexPath: IndexPath) {
         post = currentPostData[indexPath.row]
         
-        url = NSURL(string: post?.value(forKey: "imageURL") as! String)
-        data = NSData(contentsOf: url! as URL)
+        self.url = NSURL(string: self.post?.value(forKey: "imageURL") as! String)
+        
+        
+        self.data = NSData(contentsOf: self.url! as URL)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "normalCell", for: indexPath)
-    
-        getDataToShow(indexPath)
         
-        cell.textLabel?.text = post?.value(forKey: "Title") as? String
-        cell.detailTextLabel?.text = post?.value(forKey: "Author") as? String
+        self.getDataToShow(indexPath)
+        
+        
+        cell.textLabel?.text = self.post?.value(forKey: "Title") as? String
+        cell.detailTextLabel?.text = self.post?.value(forKey: "Author") as? String
         cell.accessoryType = .disclosureIndicator
-    
-        if data != nil {
-            cell.imageView?.image = UIImage(data:data! as Data)
+        
+        if self.data != nil {
+            cell.imageView?.image = UIImage(data:self.data! as Data)
             cell.imageView?.contentMode = .scaleAspectFit
+            
         }
         
         self.progress.stopAnimating()
-        
         return cell
     }
     
@@ -99,18 +102,12 @@ class ListToBuyViewController: UIViewController, UITableViewDelegate, UITableVie
         vc?.image = UIImage(data:data! as Data)!
         vc?.textTitle = post?.value(forKey: "Title") as! String
         vc?.textAuthor = post?.value(forKey: "Author") as! String
-//        vc?.textISBN = post?.value(forKey: "ISBN") as! String
         vc?.textCondition = post?.value(forKey: "Condition") as! String
-//        vc?.textEdition = post?.value(forKey: "Edition") as! String
-//        vc?.textPublisher = post?.value(forKey: "Publisher") as! String
-//        vc?.textYear = post?.value(forKey: "Year") as! String
         vc?.textPrice = post?.value(forKey: "Price") as! String
         vc?.textEmail = post?.value(forKey: "Email") as! String
         
         self.navigationController?.pushViewController(vc!, animated: true)
-        
     }
-    
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard !searchText.isEmpty else{

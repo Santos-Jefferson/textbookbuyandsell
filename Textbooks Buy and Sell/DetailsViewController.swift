@@ -12,29 +12,29 @@ class DetailsViewController: UIViewController {
 
     @IBOutlet weak var textbookImg: UIImageView!
     @IBOutlet weak var textbookDetails: UILabel!
+    @IBOutlet weak var contactButton: UIButton!
     
     var image = UIImage()
     var textTitle = " "
     var textAuthor = " "
-//    var textISBN = " "
     var textCondition = " "
     var textPrice = " "
-//    var textEdition = " "
-//    var textPublisher = " "
-//    var textYear = " "
     var textEmail = " "
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.contactButton.layer.cornerRadius = 10
+        self.contactButton.clipsToBounds = true
     
-        textbookDetails.text = "Title: \(textTitle) \nAuthor: \(textAuthor) \nCondition: \(textCondition) \nPrice: U$ \(textPrice) \nEmail: \(textEmail)"
+        textbookDetails.text = "Title: \(textTitle) \nAuthor: \(textAuthor) \nCondition: \(textCondition) \nPrice: \(textPrice) \nEmail: \(textEmail)"
         
         textbookImg.image = image
     }
     
     @IBAction func sendEmail(_ sender: Any) {
         let subject = "About \"\(textTitle)\" Textbook"
-        let body = "Hi, is \(textTitle) textbook still Avaiable? \n\nThanks!"
+        let body = "Hi, is \"\(textTitle)\" textbook still Avaiable? \n\nThanks!"
         let coded = "mailto:\(textEmail)?subject=\(subject)&body=\(body)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         
         if let emailURL: NSURL = NSURL(string: coded!) {

@@ -11,9 +11,19 @@ import Firebase
 
 class OptionsViewController: UIViewController {
 
+    @IBOutlet weak var buyButton: UIButton!
+    @IBOutlet weak var sellButton: UIButton!
+    @IBOutlet weak var logoutButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.buyButton.layer.cornerRadius = 10
+        self.sellButton.layer.cornerRadius = 10
+        self.logoutButton.layer.cornerRadius = 10
+        self.buyButton.clipsToBounds = true
+        self.sellButton.clipsToBounds = true
+        self.logoutButton.clipsToBounds = true
         
         if Auth.auth().currentUser == nil {
             self.performSegue(withIdentifier: "logout", sender: self)
@@ -23,7 +33,7 @@ class OptionsViewController: UIViewController {
     }
     @IBAction func logout(_ sender: Any) {
         try! Auth.auth().signOut()
-        //self.performSegue(withIdentifier: "logout", sender: self)
+        self.performSegue(withIdentifier: "init", sender: self)
     }
     
     override func didReceiveMemoryWarning() {
